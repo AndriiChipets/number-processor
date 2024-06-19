@@ -19,5 +19,4 @@ public class NumbersStatistic {
     private List<Long> longestDescNumSequence;
     @Setter
     private Double totalProcessingTime;
-
 }

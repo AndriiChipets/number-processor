@@ -11,7 +11,7 @@ public class NumbersStatisticMapper {
                 .withMin(String.valueOf(ns.getMin()))
                 .withMax(String.valueOf(ns.getMax()))
                 .withMedian(String.valueOf(ns.getMedian()))
-                .withAverage(String.valueOf(ns.getAverage()))
+                .withAverage(String.format("%.2f",ns.getAverage()))
                 .withLongestAscNumSequence(String.valueOf(ns.getLongestAscNumSequence()))
                 .withLongestDescNumSequence(String.valueOf(ns.getLongestDescNumSequence()))
                 .withTotalProcessingTime(String.format("%.4f", ns.getTotalProcessingTime()))

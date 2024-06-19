@@ -41,6 +41,7 @@ public class NumbersServiceImpl implements NumbersService {
         try (InputStream inputStream = file.getInputStream()) {
             new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8))
                     .lines()
+                    .map(String::trim)
                     .map(Long::parseLong)
                     .forEach(numbers::add);
         } catch (IOException e) {
@@ -115,7 +116,7 @@ public class NumbersServiceImpl implements NumbersService {
             resEnd = curEnd;
         }
         for (int j = resStart; j <= resEnd; j++) {
-            numbers.add(numbers.get(j));
+            numbersSequence.add(numbers.get(j));
         }
         return numbersSequence;
     }
