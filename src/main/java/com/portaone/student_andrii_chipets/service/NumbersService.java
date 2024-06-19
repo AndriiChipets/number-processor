@@ -7,7 +7,7 @@ import java.util.List;
 
 public interface NumbersService {
 
-    List<Long> getNumbersFromFile(MultipartFile multipartFile);
+    List<Integer> getNumbersFromFile(MultipartFile multipartFile);
 
     NumbersStatisticDto processNumbers(MultipartFile file);
 }
