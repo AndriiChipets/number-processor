@@ -1,10 +1,10 @@
-package com.portaone.student_andrii_chipets.numberprocessor;
+package com.portaone.student_andrii_chipets;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class NumberProcessorApplicationTests {
+class NumberProcessorAppTests {
 
     @Test
     void contextLoads() {
