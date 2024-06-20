@@ -8,7 +8,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
@@ -38,9 +37,9 @@ public class NumbersServiceImpl implements NumbersService {
 
     public List<Integer> getNumbersFromFile(MultipartFile file) {
         List<Integer> numbers = new ArrayList<>();
-        try (InputStream inputStream = file.getInputStream()) {
-            new BufferedReader(new InputStreamReader(inputStream, StandardCharsets.UTF_8))
-                    .lines()
+        try (BufferedReader bufferedReader = new BufferedReader(
+                new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8))) {
+            bufferedReader.lines()
                     .map(String::trim)
                     .map(Integer::parseInt)
                     .forEach(numbers::add);
