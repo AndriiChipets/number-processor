@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.function.BiFunction;
 
@@ -20,7 +21,7 @@ public class NumbersServiceImpl implements NumbersService {
     @Override
     public NumbersStatisticDto processNumbers(MultipartFile file) {
         long start = System.currentTimeMillis();
-        List<Integer> numbers = getNumbersFromFile(file);
+        int[] numbers = getNumbersFromFile(file);
         NumbersStatistic numbersStatistic = NumbersStatistic.builder()
                 .withMin(findMin(numbers))
                 .withMax(findMax(numbers))
@@ -34,53 +35,45 @@ public class NumbersServiceImpl implements NumbersService {
         return NumbersStatisticMapper.mapToNumStatDto(numbersStatistic);
     }
 
-    public List<Integer> getNumbersFromFile(MultipartFile file) {
-        List<Integer> numbers = new ArrayList<>();
+    public int[] getNumbersFromFile(MultipartFile file) {
         try (BufferedReader bufferedReader = new BufferedReader(
                 new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8))) {
-            bufferedReader.lines()
+            return bufferedReader.lines()
                     .map(String::trim)
                     .map(Integer::parseInt)
-                    .forEach(numbers::add);
+                    .mapToInt(Integer::intValue)
+                    .toArray();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return numbers;
+        return new int[0];
     }
 
-    public Integer findMax(List<Integer> numbers) {
-        return numbers
-                .stream()
-                .mapToInt(Integer::intValue)
-                .max().getAsInt();
+    public int findMax(int[] numbers) {
+        return Arrays.stream(numbers).max().getAsInt();
     }
 
-    public Integer findMin(List<Integer> numbers) {
-        return numbers
-                .stream()
-                .mapToInt(Integer::intValue)
-                .min().getAsInt();
+    public int findMin(int[] numbers) {
+        return Arrays.stream(numbers).min().getAsInt();
     }
 
-    public double calcAvg(List<Integer> numbers) {
-        return numbers.stream()
-                .mapToInt(Integer::intValue)
-                .average().getAsDouble();
+    public double calcAvg(int[] numbers) {
+        return Arrays.stream(numbers).average().getAsDouble();
     }
 
-    public Integer findMedian(List<Integer> numbers) {
-        int quantity = numbers.size();
+    public int findMedian(int[] numbers) {
+        int quantity = numbers.length;
         return quantity % 2 == 0 ?
-                calcMedinaForEvenQuantity(numbers.get(quantity / 2), numbers.get(quantity / 2 - 1))
-                : numbers.get(quantity / 2);
+                calcMedinaForEvenQuantity(numbers[quantity / 2], numbers[quantity / 2 - 1])
+                : numbers[quantity / 2];
     }
 
-    public List<Integer> findLongestAscendingSequence(List<Integer> numbers) {
+    public List<Integer> findLongestAscendingSequence(int[] numbers) {
         BiFunction<Integer, Integer, Boolean> isNextLargerThanCurrent = (a, b) -> b > a;
         return findSequence(numbers, isNextLargerThanCurrent);
     }
 
-    public List<Integer> findLongestDescendingSequence(List<Integer> numbers) {
+    public List<Integer> findLongestDescendingSequence(int[] numbers) {
         BiFunction<Integer, Integer, Boolean> isNextSmallerThanCurrent = (a, b) -> b < a;
         return findSequence(numbers, isNextSmallerThanCurrent);
     }
@@ -89,15 +82,15 @@ public class NumbersServiceImpl implements NumbersService {
         return (first + second) / 2;
     }
 
-    private List<Integer> findSequence(List<Integer> numbers, BiFunction<Integer, Integer, Boolean> sequenceType) {
+    private List<Integer> findSequence(int[] numbers, BiFunction<Integer, Integer, Boolean> sequenceType) {
         List<Integer> numbersSequence = new ArrayList<>();
         int resStart = 0;
         int resEnd = 0;
         int curStart = 0;
         int curEnd = 0;
-        for (int i = 0; i < numbers.size() - 1; i++) {
-            Integer currentNum = numbers.get(i);
-            Integer nextNum = numbers.get(i + 1);
+        for (int i = 0; i < numbers.length - 1; i++) {
+            Integer currentNum = numbers[i];
+            Integer nextNum = numbers[i + 1];
             if (sequenceType.apply(currentNum, nextNum)) {
                 curEnd = i + 1;
             } else {
@@ -114,7 +107,7 @@ public class NumbersServiceImpl implements NumbersService {
             resEnd = curEnd;
         }
         for (int j = resStart; j <= resEnd; j++) {
-            numbersSequence.add(numbers.get(j));
+            numbersSequence.add(numbers[j]);
         }
         return numbersSequence;
     }
