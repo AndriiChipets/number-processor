@@ -22,7 +22,6 @@ public class NumbersServiceImpl implements NumbersService {
         long start = System.currentTimeMillis();
         List<Integer> numbers = getNumbersFromFile(file);
         NumbersStatistic numbersStatistic = NumbersStatistic.builder()
-                .withNumbersFromFile(numbers)
                 .withMin(findMin(numbers))
                 .withMax(findMax(numbers))
                 .withMedian(findMedian(numbers))

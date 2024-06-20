@@ -10,7 +10,6 @@ import java.util.List;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class NumbersStatistic {
-    private List<Integer> numbersFromFile;
     private int min;
     private int max;
     private int median;
