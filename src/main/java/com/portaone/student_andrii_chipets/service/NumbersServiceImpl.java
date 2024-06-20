@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.function.BiFunction;
@@ -22,7 +23,7 @@ public class NumbersServiceImpl implements NumbersService {
     @Override
     public NumbersStatisticDto processNumbers(MultipartFile file) {
         long start = System.currentTimeMillis();
-        List<Integer> numbers = getNumbersFromFile(file);
+        int[] numbers = getNumbersFromFile(file);
         NumbersStatistic numbersStatistic = NumbersStatistic.builder()
                 .withMin(findMin(numbers))
                 .withMax(findMax(numbers))
@@ -36,36 +37,37 @@ public class NumbersServiceImpl implements NumbersService {
         return NumbersStatisticMapper.mapToNumStatDto(numbersStatistic);
     }
 
-    public List<Integer> getNumbersFromFile(MultipartFile file) {
+    public int[] getNumbersFromFile(MultipartFile file) {
         try (BufferedReader bufferedReader = new BufferedReader(
                 new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8))) {
             return bufferedReader.lines()
                     .map(String::trim)
                     .map(Integer::parseInt)
-                    .collect(Collectors.toCollection(LinkedList::new));
+                    .mapToInt(Integer::intValue)
+                    .toArray();
         } catch (IOException e) {
             e.printStackTrace();
         }
-        return List.of();
+        return new int[0];
     }
 
-    public int findMax(List<Integer> numbers) {
-        return numbers.stream().mapToInt(Integer::intValue).max().getAsInt();
+    public int findMax(int[] numbers) {
+        return Arrays.stream(numbers).max().getAsInt();
     }
 
-    public int findMin(List<Integer> numbers) {
-        return numbers.stream().mapToInt(Integer::intValue).min().getAsInt();
+    public int findMin(int[] numbers) {
+        return Arrays.stream(numbers).min().getAsInt();
     }
 
-    public double calcAvg(List<Integer> numbers) {
-        return numbers.stream().mapToInt(Integer::intValue).average().getAsDouble();
+    public double calcAvg(int[] numbers) {
+        return Arrays.stream(numbers).average().getAsDouble();
     }
 
-    public int findMedian(List<Integer> numbers) {
-        int quantity = numbers.size();
+    public int findMedian(int[] numbers) {
+        int quantity = numbers.length;
         return quantity % 2 == 0 ?
-                calcMedinaForEvenQuantity(numbers.get(quantity / 2), numbers.get(quantity / 2 - 1))
-                : numbers.get(quantity / 2);
+                calcMedinaForEvenQuantity(numbers[quantity / 2], numbers[quantity / 2 - 1])
+                : numbers[quantity / 2];
     }
 
     public List<Integer> findLongestAscendingSequence(int[] numbers) {
