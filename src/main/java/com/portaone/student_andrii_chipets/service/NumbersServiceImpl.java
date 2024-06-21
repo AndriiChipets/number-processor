@@ -12,10 +12,8 @@ import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.function.BiFunction;
-import java.util.stream.Collectors;
 
 @Service
 public class NumbersServiceImpl implements NumbersService {
@@ -29,8 +27,8 @@ public class NumbersServiceImpl implements NumbersService {
                 .withMax(findMax(numbers))
                 .withMedian(findMedian(numbers))
                 .withAverage(calcAvg(numbers))
-                .withLongestAscNumSequence(List.of(0))
-                .withLongestDescNumSequence(List.of(0))
+                .withLongestAscNumSequence(findLongestAscendingSequence(numbers))
+                .withLongestDescNumSequence(findLongestDescendingSequence(numbers))
                 .build();
         long end = System.currentTimeMillis();
         numbersStatistic.setTotalProcessingTime(calcProcessTime(start, end));
