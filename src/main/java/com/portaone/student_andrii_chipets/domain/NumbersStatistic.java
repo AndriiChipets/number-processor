@@ -18,4 +18,5 @@ public class NumbersStatistic {
     private List<Integer> longestDescNumSequence;
     @Setter
     private Double totalProcessingTime;
+    private int totalNumQuantity;
 }

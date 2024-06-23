@@ -29,6 +29,7 @@ public class NumbersServiceImpl implements NumbersService {
                 .withAverage(calcAvg(numbers))
                 .withLongestAscNumSequence(findLongestAscendingSequence(numbers))
                 .withLongestDescNumSequence(findLongestDescendingSequence(numbers))
+                .withTotalNumQuantity(getTotalNumQuantity(numbers))
                 .build();
         long end = System.currentTimeMillis();
         numbersStatistic.setTotalProcessingTime(calcProcessTime(start, end));
@@ -114,5 +115,9 @@ public class NumbersServiceImpl implements NumbersService {
 
     public double calcProcessTime(long start, long end) {
         return (double) (end - start) / 1000;
+    }
+
+    private int getTotalNumQuantity(int[] numbers) {
+        return numbers.length;
     }
 }

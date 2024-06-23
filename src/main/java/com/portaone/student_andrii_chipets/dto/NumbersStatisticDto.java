@@ -15,4 +15,5 @@ public class NumbersStatisticDto {
     private String longestAscNumSequence;
     private String longestDescNumSequence;
     private String totalProcessingTime;
+    private String totalNumQuantity;
 }
