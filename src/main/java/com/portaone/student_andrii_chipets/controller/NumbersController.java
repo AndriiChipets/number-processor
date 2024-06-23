@@ -12,12 +12,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import java.util.Objects;
+
 @Controller
 @AllArgsConstructor
 @Log4j2
 public class NumbersController {
 
-    private final static String EMPTY_FILE_MESSAGE = "Please select the file to process";
+    private final static String EMPTY_FILE_MESSAGE = "Please select file to process";
+    private final static String WRONG_FILE_FORMAT_MESSAGE = "Please select file with \".txt\" extension";
     private NumbersService service;
 
     @GetMapping("/")
@@ -28,9 +31,15 @@ public class NumbersController {
     @PostMapping("/process")
     public String processFile(Model model, @RequestParam("file") MultipartFile file, RedirectAttributes attributes) {
 
-        if (file.isEmpty()) {
+        if (Objects.isNull(file) || file.isEmpty()) {
             attributes.addFlashAttribute("message", EMPTY_FILE_MESSAGE);
             log.warn("Empty file: " + "{}", file.getOriginalFilename());
+            return "redirect:/";
+        }
+
+        if (!file.getOriginalFilename().endsWith(".txt")) {
+            attributes.addFlashAttribute("message", WRONG_FILE_FORMAT_MESSAGE);
+            log.warn("File with wrong extension: " + "{}", file.getOriginalFilename());
             return "redirect:/";
         }
 

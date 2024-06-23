@@ -79,7 +79,7 @@ Contributions are welcome! If you have ideas or improvements, feel free to submi
 4. The file data structure must follows several rules:
 - only one number in one line
 - number delimiter is "\n" (new line)
-- data structure example:
+- data structure example:  
 0  
 50  
 301  

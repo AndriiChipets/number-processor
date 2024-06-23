@@ -1,7 +1,6 @@
 package com.portaone.student_andrii_chipets.service.processor;
 
 import lombok.extern.log4j.Log4j2;
-import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.stereotype.Service;
 
 import java.util.*;
@@ -47,9 +46,12 @@ public class NumberProcessorImpl implements NumberProcessor {
     @Override
     public Integer findMedian(int[] numbers) {
         int quantity = numbers.length;
-        Integer median = quantity % 2 == 0 ?
-                calcMedinaForEvenQuantity(numbers[quantity / 2], numbers[quantity / 2 - 1])
-                : numbers[quantity / 2];
+        Integer median = null;
+        if (quantity != 0) {
+            median = quantity % 2 == 0 ?
+                    calcMedinaForEvenQuantity(numbers[quantity / 2], numbers[quantity / 2 - 1])
+                    : numbers[quantity / 2];
+        }
         log.info("median number: " + "{}", median);
         return median;
     }

@@ -17,5 +17,4 @@ public interface ViewProvider {
     String createViewTotalProcessingTime(Double num);
 
     String createViewIntNum(Integer num);
-
 }

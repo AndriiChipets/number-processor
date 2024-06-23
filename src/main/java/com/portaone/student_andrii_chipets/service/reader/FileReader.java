@@ -5,5 +5,4 @@ import org.springframework.web.multipart.MultipartFile;
 public interface FileReader {
 
     int[] getNumbersFromFile(MultipartFile file);
-
 }

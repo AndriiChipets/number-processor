@@ -15,7 +15,6 @@ import org.springframework.web.multipart.MultipartFile;
 @Log4j2
 public class NumbersServiceImpl implements NumbersService {
 
-
     private final FileReader fileReader;
     private final NumberProcessor processor;
     private final NumbersMapper mapper;

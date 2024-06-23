@@ -19,5 +19,4 @@ public interface NumberProcessor {
     Double calcProcessTime(long start, long end);
 
     Integer getTotalNumQuantity(int[] numbers);
-
 }
