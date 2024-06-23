@@ -4,20 +4,20 @@ import java.util.List;
 
 public interface NumberProcessor {
 
-    int findMax(int[] numbers);
+    Integer findMax(int[] numbers);
 
-    int findMin(int[] numbers);
+    Integer findMin(int[] numbers);
 
-    double calcAvg(int[] numbers);
+    Double calcAvg(int[] numbers);
 
-    int findMedian(int[] numbers);
+    Integer findMedian(int[] numbers);
 
     List<Integer> findLongestAscendingSequence(int[] numbers);
 
     List<Integer> findLongestDescendingSequence(int[] numbers);
 
-    double calcProcessTime(long start, long end);
+    Double calcProcessTime(long start, long end);
 
-    int getTotalNumQuantity(int[] numbers);
+    Integer getTotalNumQuantity(int[] numbers);
 
 }

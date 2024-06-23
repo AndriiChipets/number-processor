@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
-    <title>Spring Boot & Thymeleaf File Upload</title>
+    <title>PortaOne (BAD2024)</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
 </head>
 <body>
@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>Upload File Example</h2>
+                <h2>Please, Upload file</h2>
                 <p th:text="${message}" th:if="${message ne null}" class="alert alert-primary"></p>
                 <form method="post" th:action="@{/process}" enctype="multipart/form-data">
                     <div class="form-group">
@@ -23,35 +23,35 @@
                 <div>
                     <ul class="list-group">
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Minimum Number:
+                            <b>Minimum Number:</b>
                             <span th:text="${result.getMin()}" th:if="${result ne null}"></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Maximum Number:
+                            <b>Maximum Number:</b>
                             <span th:text="${result.getMax()}" th:if="${result ne null}"></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Median Number:
+                            <b>Median Number:</b>
                             <span th:text="${result.getMedian()}" th:if="${result ne null}"></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Average Number:
+                            <b>Average Number:</b>
                             <span th:text="${result.getAverage()}" th:if="${result ne null}"></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Longest Ascending Number Sequence:
+                            <b>Longest Ascending Number Sequence:</b>
                             <span th:text="${result.getLongestAscNumSequence()}" th:if="${result ne null}"></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Longest Descending Number Sequence:
+                            <b>Longest Descending Number Sequence:</b>
                             <span th:text="${result.getLongestDescNumSequence()}" th:if="${result ne null}"></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Total Processing Time, sec:
+                            <b>Total Processing Time, sec:</b>
                             <span th:text="${result.getTotalProcessingTime()}" th:if="${result ne null}"></span>
                         </li>
                         <li class="list-group-item d-flex justify-content-between align-items-center">
-                            Total Numbers Quantity, pc:
+                            <b>Total Numbers Quantity, pc:</b>
                             <span th:text="${result.getTotalNumQuantity()}" th:if="${result ne null}"></span>
                         </li>
                     </ul>

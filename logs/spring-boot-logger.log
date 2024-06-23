@@ -1,0 +1,158 @@
+2024-06-23 13:03:18,914 INFO o.s.b.StartupInfoLogger [restartedMain] Starting NumberProcessorApp using Java 21.0.2 with PID 15620 (C:\workspacePortaOne\NumberProcessor\target\classes started by ChAn in C:\workspacePortaOne\NumberProcessor)
+2024-06-23 13:03:18,929 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-06-23 13:03:18,966 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23 13:03:18,966 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23 13:03:19,781 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-06-23 13:03:19,789 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:03:19,791 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-23 13:03:19,791 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23 13:03:19,827 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-23 13:03:19,828 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 861 ms
+2024-06-23 13:03:19,961 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2024-06-23 13:03:20,191 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-06-23 13:03:20,206 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:03:20,217 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2024-06-23 13:03:20,223 INFO o.s.b.StartupInfoLogger [restartedMain] Started NumberProcessorApp in 1.782 seconds (process running for 2.598)
+2024-06-23 13:03:31,349 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23 13:03:31,349 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-06-23 13:03:31,349 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2024-06-23 13:03:31,399 INFO c.p.s.s.NumbersServiceImpl [http-nio-8080-exec-1] fileProcessing numbers from file
+2024-06-23 13:03:31,416 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] -1000min number: 
+2024-06-23 13:03:31,416 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 100max number: 
+2024-06-23 13:03:31,416 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 11median number: 
+2024-06-23 13:03:31,416 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] -24.91304347826087avg number: 
+2024-06-23 13:03:31,416 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] [-124, 2, 3, 4, 5, 7, 9, 22]ascending sequence: 
+2024-06-23 13:03:31,416 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] [22, 13, 10, 9, 5, 3, -44, -100, -124, -1000]descending sequence: 
+2024-06-23 13:03:31,416 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 46total num quantity: 
+2024-06-23 13:03:31,416 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 0.017process time: 
+2024-06-23 13:05:00,497 INFO o.s.b.StartupInfoLogger [restartedMain] Starting NumberProcessorApp using Java 21.0.2 with PID 13360 (C:\workspacePortaOne\NumberProcessor\target\classes started by ChAn in C:\workspacePortaOne\NumberProcessor)
+2024-06-23 13:05:00,497 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-06-23 13:05:00,568 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23 13:05:00,569 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23 13:05:01,363 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-06-23 13:05:01,371 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:05:01,372 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-23 13:05:01,372 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23 13:05:01,406 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-23 13:05:01,407 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 836 ms
+2024-06-23 13:05:01,543 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2024-06-23 13:05:01,767 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-06-23 13:05:01,780 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:05:01,790 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2024-06-23 13:05:01,798 INFO o.s.b.StartupInfoLogger [restartedMain] Started NumberProcessorApp in 1.77 seconds (process running for 2.384)
+2024-06-23 13:05:23,289 INFO o.s.b.StartupInfoLogger [restartedMain] Starting NumberProcessorApp using Java 21.0.2 with PID 15640 (C:\workspacePortaOne\NumberProcessor\target\classes started by ChAn in C:\workspacePortaOne\NumberProcessor)
+2024-06-23 13:05:23,292 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-06-23 13:05:23,341 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23 13:05:23,341 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23 13:05:24,142 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-06-23 13:05:24,150 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:05:24,151 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-23 13:05:24,152 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23 13:05:24,187 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-23 13:05:24,187 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 845 ms
+2024-06-23 13:05:24,324 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2024-06-23 13:05:24,542 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-06-23 13:05:24,556 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:05:24,567 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2024-06-23 13:05:24,573 INFO o.s.b.StartupInfoLogger [restartedMain] Started NumberProcessorApp in 1.793 seconds (process running for 2.414)
+2024-06-23 13:05:36,037 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23 13:05:36,037 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-06-23 13:05:36,037 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2024-06-23 13:05:36,101 INFO c.p.s.s.NumbersServiceImpl [http-nio-8080-exec-1] fileProcessing numbers from file
+2024-06-23 13:05:36,103 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] -1000min number: 
+2024-06-23 13:05:36,103 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 100max number: 
+2024-06-23 13:05:36,103 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 11median number: 
+2024-06-23 13:05:36,103 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] -24.91304347826087avg number: 
+2024-06-23 13:05:36,103 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] [-124, 2, 3, 4, 5, 7, 9, 22]ascending sequence: 
+2024-06-23 13:05:36,103 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] [22, 13, 10, 9, 5, 3, -44, -100, -124, -1000]descending sequence: 
+2024-06-23 13:05:36,103 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 46total num quantity: 
+2024-06-23 13:05:36,103 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 0.0process time: 
+2024-06-23 13:06:25,708 INFO o.s.b.StartupInfoLogger [restartedMain] Starting NumberProcessorApp using Java 21.0.2 with PID 3476 (C:\workspacePortaOne\NumberProcessor\target\classes started by ChAn in C:\workspacePortaOne\NumberProcessor)
+2024-06-23 13:06:25,710 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-06-23 13:06:25,756 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23 13:06:25,757 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23 13:06:26,547 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-06-23 13:06:26,555 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:06:26,557 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-23 13:06:26,557 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23 13:06:26,592 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-23 13:06:26,593 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 834 ms
+2024-06-23 13:06:26,736 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2024-06-23 13:06:26,971 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-06-23 13:06:26,985 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:06:26,997 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2024-06-23 13:06:27,004 INFO o.s.b.StartupInfoLogger [restartedMain] Started NumberProcessorApp in 1.836 seconds (process running for 2.456)
+2024-06-23 13:06:31,079 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23 13:06:31,079 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-06-23 13:06:31,079 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2024-06-23 13:06:31,143 INFO c.p.s.s.NumbersServiceImpl [http-nio-8080-exec-1] Processing numbers from filetest.txt
+2024-06-23 13:06:31,145 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] -1000min number: 
+2024-06-23 13:06:31,145 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 100max number: 
+2024-06-23 13:06:31,145 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 11median number: 
+2024-06-23 13:06:31,145 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] -24.91304347826087avg number: 
+2024-06-23 13:06:31,145 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] [-124, 2, 3, 4, 5, 7, 9, 22]ascending sequence: 
+2024-06-23 13:06:31,145 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] [22, 13, 10, 9, 5, 3, -44, -100, -124, -1000]descending sequence: 
+2024-06-23 13:06:31,145 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 46total num quantity: 
+2024-06-23 13:06:31,145 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] 0.001process time: 
+2024-06-23 13:10:48,549 INFO o.s.b.StartupInfoLogger [restartedMain] Starting NumberProcessorApp using Java 21.0.2 with PID 16472 (C:\workspacePortaOne\NumberProcessor\target\classes started by ChAn in C:\workspacePortaOne\NumberProcessor)
+2024-06-23 13:10:48,549 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-06-23 13:10:48,603 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23 13:10:48,603 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23 13:10:49,404 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-06-23 13:10:49,412 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:10:49,414 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-23 13:10:49,414 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23 13:10:49,449 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-23 13:10:49,449 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 846 ms
+2024-06-23 13:10:49,594 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2024-06-23 13:10:49,787 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-06-23 13:10:49,802 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:10:49,818 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2024-06-23 13:10:49,834 INFO o.s.b.StartupInfoLogger [restartedMain] Started NumberProcessorApp in 1.763 seconds (process running for 2.519)
+2024-06-23 13:10:51,950 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23 13:10:51,950 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-06-23 13:10:51,950 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2024-06-23 13:10:52,000 INFO c.p.s.s.NumbersServiceImpl [http-nio-8080-exec-1] Processing numbers from file : test.txt
+2024-06-23 13:10:52,017 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] min number: -1000
+2024-06-23 13:10:52,017 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] max number: 100
+2024-06-23 13:10:52,017 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] median number: 11
+2024-06-23 13:10:52,017 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] avg number: -24.91304347826087
+2024-06-23 13:10:52,017 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] ascending sequence: [-124, 2, 3, 4, 5, 7, 9, 22]
+2024-06-23 13:10:52,017 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] descending sequence: [22, 13, 10, 9, 5, 3, -44, -100, -124, -1000]
+2024-06-23 13:10:52,017 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] total num quantity: 46
+2024-06-23 13:10:52,017 INFO c.p.s.s.p.NumberProcessorImpl [http-nio-8080-exec-1] process time: 0.002
+2024-06-23 13:10:52,017 INFO c.p.s.c.NumbersController [http-nio-8080-exec-1] File processed successfully : test.txt
+2024-06-23 13:11:32,760 INFO o.s.b.StartupInfoLogger [restartedMain] Starting NumberProcessorApp using Java 21.0.2 with PID 13556 (C:\workspacePortaOne\NumberProcessor\target\classes started by ChAn in C:\workspacePortaOne\NumberProcessor)
+2024-06-23 13:11:32,762 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-06-23 13:11:32,809 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23 13:11:32,809 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23 13:11:33,839 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-06-23 13:11:33,853 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:11:33,855 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-23 13:11:33,855 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23 13:11:33,910 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-23 13:11:33,910 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 1100 ms
+2024-06-23 13:11:34,169 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2024-06-23 13:11:34,458 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-06-23 13:11:34,473 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:11:34,484 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2024-06-23 13:11:34,490 INFO o.s.b.StartupInfoLogger [restartedMain] Started NumberProcessorApp in 2.254 seconds (process running for 3.032)
+2024-06-23 13:11:37,017 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-06-23 13:11:37,018 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2024-06-23 13:11:37,018 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2024-06-23 13:11:37,067 WARN c.p.s.c.NumbersController [http-nio-8080-exec-1] Please select a file to process. Or chosen file is emptyEmpty.txt
+2024-06-23 13:12:42,823 INFO o.s.b.StartupInfoLogger [restartedMain] Starting NumberProcessorApp using Java 21.0.2 with PID 13212 (C:\workspacePortaOne\NumberProcessor\target\classes started by ChAn in C:\workspacePortaOne\NumberProcessor)
+2024-06-23 13:12:42,827 INFO o.s.b.SpringApplication [restartedMain] No active profile set, falling back to 1 default profile: "default"
+2024-06-23 13:12:42,875 INFO o.s.b.l.DeferredLog [restartedMain] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-06-23 13:12:42,876 INFO o.s.b.l.DeferredLog [restartedMain] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-06-23 13:12:43,682 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat initialized with port 8080 (http)
+2024-06-23 13:12:43,690 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:12:43,692 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting service [Tomcat]
+2024-06-23 13:12:43,692 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-06-23 13:12:43,728 INFO o.a.j.l.DirectJDKLog [restartedMain] Initializing Spring embedded WebApplicationContext
+2024-06-23 13:12:43,728 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [restartedMain] Root WebApplicationContext: initialization completed in 851 ms
+2024-06-23 13:12:43,873 INFO o.s.b.a.w.s.WelcomePageHandlerMapping [restartedMain] Adding welcome page template: index
+2024-06-23 13:12:44,087 INFO o.s.b.d.a.OptionalLiveReloadServer [restartedMain] LiveReload server is running on port 35729
+2024-06-23 13:12:44,101 INFO o.a.j.l.DirectJDKLog [restartedMain] Starting ProtocolHandler ["http-nio-8080"]
+2024-06-23 13:12:44,112 INFO o.s.b.w.e.t.TomcatWebServer [restartedMain] Tomcat started on port 8080 (http) with context path '/'
+2024-06-23 13:12:44,119 INFO o.s.b.StartupInfoLogger [restartedMain] Started NumberProcessorApp in 1.803 seconds (process running for 2.421)

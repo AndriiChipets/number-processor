@@ -10,13 +10,13 @@ import java.util.List;
 @EqualsAndHashCode
 @AllArgsConstructor
 public class NumbersStatistic {
-    private int min;
-    private int max;
-    private int median;
-    private double average;
+    private Integer min;
+    private Integer max;
+    private Integer median;
+    private Double average;
     private List<Integer> longestAscNumSequence;
     private List<Integer> longestDescNumSequence;
     @Setter
     private Double totalProcessingTime;
-    private int totalNumQuantity;
+    private Integer totalNumQuantity;
 }
